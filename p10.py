@@ -7,7 +7,7 @@ class Inventory:
 
     def remove_item(self, name):
         if name not in self.items:
-            raise KeyError(f"No item named '{name}'")
+            raise KeyError(f"No item named {name}")
         del self.items[name]
 
     def total_value(self):
